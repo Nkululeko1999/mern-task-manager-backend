@@ -4,7 +4,7 @@ import taskRoutes from "./routes/tasks.routes.js";
 import cors from "cors";
 
 const app = express();
-const port =  process.env.PORT || 5000;
+const port =  process.env.PORT || 1000;
 
 app.use(cors({
    origin: 'https://mern-task-app.onrender.com',

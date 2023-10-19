@@ -7,7 +7,7 @@ const app = express();
 const port =  process.env.PORT || 5000;
 
 app.use(cors({
-  origin: "https://mern-task-app-q0sa.onrender.com", 
+  origin: "https://mern-task-app-0krh.onrender.com", 
   methods: "GET,POST,PUT,DELETE",
   allowedHeaders: "Content-Type,Authorization",
   credentials: true,
@@ -15,7 +15,7 @@ app.use(cors({
 
 
 app.use(express.json());
-app.use('/api/tasks', taskRoutes);
+app.use('api/tasks', taskRoutes);
 
 const startServer = async () => {
     try {
